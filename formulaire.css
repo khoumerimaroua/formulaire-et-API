@@ -1,0 +1,117 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* API */
+body{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 238, 235);
+    font-family: 'Roboto', sans-serif;
+   }
+#API{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top:100px;
+}
+#API {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    width: 80%;
+  }
+  
+  #API img {
+    max-width: 100px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  #champ{
+  margin-bottom: 10px;}
+  .invalid-feedback{
+   display: none;
+  }
+  /*-CSS FORMULAIRE-*/
+  .container{
+    margin-top:20px;
+    background-color: #cea9a0;
+    border-radius:5px;
+    width: 450px;
+  
+  }
+  /* la ligne dessous  border-bottom: 1px solid #585a59;  */
+  .header{
+    background-color: rgba(255, 0, 68, 0.784);
+    padding:20px 40px;
+    border-bottom: 1px solid #585a59;  
+    text-align:center;
+  }
+  form{
+    padding: 40px 30px;
+  }
+.form-control{
+  margin-bottom:20px ;
+  padding-bottom:20px ;
+  position:relative;
+}
+/* label si tu le mets pas en display :inline-block tu peux pas donner margin */
+.form-control input {
+ display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width:100%;
+  padding: 10px;
+  font-size:14px;
+  border-radius: 10px;
+}
+.form-control i{
+  position: absolute;
+top:40px;
+right: 10px;
+visibility: hidden;
+}
+.form-control small {
+  visibility: hidden;
+
+}
+.form-control .error small {
+  color:rgb(217, 11, 11);
+  visibility:visible;
+}
+.form button{
+background-color: rgb(160, 16, 143) ;
+padding: 10px;
+font-size: 16px;
+width: 100%;
+color:white;
+border-radius: 10px;
+}
+.form-control.success input {
+  border: 2px solid rgb(15, 95, 10);
+  
+}
+.form-control.error input{
+  border: 3px solid rgb(217, 11, 11);
+}
+.form-control.success i.fa-circle-check{
+  color:rgb(15, 95, 10);
+  visibility: visible;
+}
+  
+.form-control.error i.fa-circle-exclamation{
+  color:rgb(222, 10, 10);
+  visibility: visible;
+}
+  
